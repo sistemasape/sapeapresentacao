@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SAPE - Apresentação Executiva</title>
+    
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .reveal {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            text-transform: none;
+            letter-spacing: -0.03em;
+            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .capa-title {
+            font-size: 6rem !important;
+            margin-bottom: 0 !important;
+            filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.3));
+            animation: pulse 3s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { filter: drop-shadow(0 0 20px rgba(56, 189, 248, 0.2)); }
+            100% { filter: drop-shadow(0 0 40px rgba(56, 189, 248, 0.6)); }
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight-text {
+            color: #38bdf8 !important;
+            font-weight: 600;
+        }
+
+        .reveal p, .reveal li {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #cbd5e1;
+        }
+
+        .icon-box {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        .print-tela {
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.1);
+            max-height: 380px;
+            width: auto;
+            max-width: 100%;
+            margin: 0;
+            transition: transform 0.3s ease;
+        }
+        .print-tela:hover {
+            transform: scale(1.05);
+        }
+
+        .phone-mockup {
+            position: relative;
+            width: 220px;
+            height: 450px;
+            border: 12px solid #1e293b;
+            border-radius: 36px;
+            background: #000;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(255,255,255,0.1);
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone-mockup::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 20px;
+            background: #1e293b;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            z-index: 10;
+        }
+        .phone-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            margin: 0 !important;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <!-- Slide 1: Capa -->
+        <section>
+            <div class="glass-panel" style="border-top: 4px solid #38bdf8;">
+                <h1 class="capa-title">SAPE</h1>
+                <h3 style="font-size: 2rem; color: #f8fafc; -webkit-text-fill-color: #f8fafc; margin-top: 20px; font-weight: 400;">Sistema Administrativo Pedagógico Escolar</h3>
+                <p class="mt-6 text-gray-400" style="font-size: 1.4rem;">
+                    Inteligência de dados, burocracia zero e experiência premium para a educação municipal.
+                </p>
+            </div>
+        </section>
+
+        <!-- Slide 2: O Salto Tecnológico -->
+        <section>
+            <h2>O Salto Tecnológico</h2>
+            <div class="glass-panel text-left mt-8">
+                <ul>
+                    <li class="fragment fade-up mb-4"><strong>Sistemas Antigos:</strong> Lentos, engessados, pesados, burocráticos, visual ultrapassado, dificuldade para os professores. .</li>
+                    <li class="fragment fade-up mb-4"><span class="highlight-text">A Era SAPE:</span> Foco absoluto na <strong>Inteligência de Dados e Experiência do Usuário</strong> para gerenciar o presente.</li>
+                    <li class="fragment fade-up">Telas modernas e tempo de resposta em milissegundos. Um design criado para encantar e facilitar.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 3: Gabinete BI -->
+        <section>
+            <h2 style="font-size: 2.8rem;">Gabinete BI (Inteligência Educacional)</h2>
+            <div class="grid grid-cols-2 gap-8 mt-6 items-center">
+                <div class="glass-panel text-left h-full">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem; color: #cbd5e1;"><strong class="text-white">O fim da gestão no escuro.</strong> A Inteligência (BI) aplicada à pedagogia.</p>
+                    <ul class="mt-2">
+                        <li class="fragment fade-up mb-3" style="font-size: 1rem;">Métricas <strong>ao vivo</strong>: Total de Alunos, Evasão Escolar e Média de Faltas.</li>
+                        <li class="fragment fade-up mb-3" style="font-size: 1rem;">Gráficos que apontam exatamente onde focar os esforços.</li>
+                        <li class="fragment fade-up" style="font-size: 1rem;"><span class="highlight-text">Ação preventiva:</span> A Secretaria e as gestões escolares atuam antes que o aluno abandone a escola.</li>
+                    </ul>
+                </div>
+                <div class="fragment fade-left h-full flex items-center justify-center">
+                    <!-- Espera-se o arquivo tela_gabinete.png -->
+                    <img src="tela_gabinete.png" alt="Gabinete BI" class="print-tela">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Central de Comando & INEP -->
+        <section>
+            <h2>A Central da Secretaria</h2>
+            <div class="grid grid-cols-2 gap-8 mt-6 items-center">
+                <div class="fragment fade-right h-full flex items-center justify-center">
+                     <!-- Espera-se o arquivo tela_comando.png -->
+                    <img src="tela_comando.png" alt="Central de Comando" class="print-tela">
+                </div>
+                <div class="glass-panel text-left h-full">
+                    <h4 style="font-size: 1.5rem; color: white;">Central de Comando</h4>
+                    <p style="font-size: 1rem; margin-bottom: 1.5rem;">Disparo instantâneo de comunicados. A Secretaria fala e a mensagem aparece na tela de todas as escolas (Broadcast).</p>
+                    
+                    <h4 style="font-size: 1.5rem; color: white;">Exportações Oficiais (INEP)</h4>
+                    <p style="font-size: 1rem;">Fim do retrabalho com planilhas. Geração de relatórios para o <strong>Censo Escolar</strong> e <strong>Bolsa Família</strong> com 1 clique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: A Visão da Escola (Direção) -->
+        <section>
+            <h2>Gestão Escolar Descomplicada</h2>
+            <div class="grid grid-cols-2 gap-8 mt-6 items-center">
+                <div class="glass-panel text-left h-full">
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem; color: white;">Controle total nas mãos da Direção.</p>
+                    <ul class="mt-2">
+                        <li class="fragment fade-up mb-3" style="font-size: 1rem;">Visão geral das turmas, alunos ativos e distribuição escolar.</li>
+                        <li class="fragment fade-up mb-3" style="font-size: 1rem;"><strong>Gestão de Professores:</strong> Adicione, remova ou gerencie credenciais de acesso rapidamente.</li>
+                        <li class="fragment fade-up" style="font-size: 1rem;">Relatórios individuais por escola à distância de um clique.</li>
+                    </ul>
+                </div>
+                <div class="fragment fade-left h-full flex flex-col items-center justify-center gap-4">
+                     <!-- Espera-se os arquivos tela_escola.png e tela_gestao.png -->
+                    <img src="tela_escola.png" alt="Visão da Escola" class="print-tela" style="max-height: 180px;">
+                    <img src="tela_gestao.png" alt="Gestão de Professores" class="print-tela" style="max-height: 180px;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: O Professor no Centro -->
+        <section>
+            <h2>O Professor no Centro</h2>
+            <div class="grid grid-cols-3 gap-6 mt-6 items-center">
+                <!-- Visão Computador -->
+                <div class="fragment fade-right flex items-center justify-center">
+                    <img src="tela_professor.png" alt="Tela do Professor" class="print-tela">
+                </div>
+                <!-- Visão Mobile -->
+                <div class="fragment fade-up flex justify-center items-center">
+                    <div class="phone-mockup">
+                        <img src="sape_mobile.png" alt="SAPE Mobile App">
+                    </div>
+                </div>
+                <!-- Textos -->
+                <div class="glass-panel text-left h-full flex flex-col justify-center" style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.4rem; margin-bottom: 1rem;">Zero Burocracia</h3>
+                    <ul class="mt-2">
+                        <li class="fragment fade-up mb-3" style="font-size: 0.95rem;">Lançamentos de frequência e registro de aula muito rápidos.</li>
+                        <li class="fragment fade-up mb-3" style="font-size: 0.95rem;"><strong class="text-white">Android e iOS:</strong> App nativo direto no navegador.</li>
+                        <li class="fragment fade-up" style="font-size: 0.95rem;"><span class="highlight-text">Modo Escuro:</span> Conforto visual no dia a dia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Ecossistema -->
+        <section>
+            <h2>Ecossistema Multi-Plataforma</h2>
+            <div class="glass-panel mt-6 text-left">
+                <ul>
+                    <li class="fragment fade-up mb-4"><strong>Nuvem Segura:</strong> Operação Multi-tenant, garantindo dados blindados e isolados.</li>
+                    <li class="fragment fade-up mb-4"><strong>Aplicativo Nativo (.APK):</strong> Capacidade de empacotamento oficial para Android e iOS.</li>
+                    <li class="fragment fade-up"><strong>Instalação Local (Desktop):</strong> Versões executáveis para <span class="highlight-text">Windows, Linux e macOS</span>.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 8: Fechamento -->
+        <section>
+            <h2 style="font-size: 3.5rem;">O Próximo Passo</h2>
+            <div class="glass-panel mt-8">
+                <p class="text-xl">Convidamos a Secretaria para iniciarmos o mapeamento das necessidades locais.</p>
+                <p class="mt-6 text-xl">Com nossa tecnologia proprietária, o SAPE não é um pacote fechado, mas sim <span class="highlight-text">uma plataforma que se molda à realidade do município.</span></p>
+                <br>
+                <div class="mt-8 p-6 border border-blue-500 rounded-xl bg-blue-900 bg-opacity-20 inline-block">
+                    <p style="color: #60a5fa; font-weight: 600; margin: 0; font-size: 1.6rem;">sapemunicipio.zonaeducacional.org</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        transition: 'slide', 
+        backgroundTransition: 'fade',
+        controls: true,
+        progress: true,
+        center: true,
+        width: 1200, // Ajuste para caber as 3 colunas no slide do professor
+    });
+</script>
+
+</body>
+</html>
